@@ -104,7 +104,22 @@ h2, h3{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation-name: "color-change";
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
     
+}
+
+@keyframes color-change{
+    0% {
+        border: #DDCA40 solid 8px;  
+    }
+    50% {
+        border: #006F2D solid 8px;  
+    }
+    0% {
+        border: #5DAE46 solid 8px;  
+    }
 }
 
 .header-box {
@@ -145,4 +160,7 @@ margin: 1em;
     grid-template-columns: 1fr 1fr;
     margin: 1em;
 }
+
+
+/* CSS animations*/
 
