@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Source+Sans+Pro:ital@1&family=Source+Serif+4&family=Zilla+Slab:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/heineken" rel="stylesheet">
     <link href="CSS/reset.css" rel="stylesheet" type="text/css">
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <title>Shopping Page</title>
@@ -17,7 +17,6 @@
 
     <header class="header-box head_nav">
         <!--nav to other pages and logo nav to home page -box model-->
-        <img src="Images/" alt="logo">
 
         <nav class="" aria-label="Main Navigation">
             <h2  hidden>Main Navigation </h2>
@@ -25,11 +24,12 @@
             <a href="Home.html">Home</a>
             <a href="About.html">About</a>
             <a href="Products.html">Our Products</a>
+            <img class="center-flex" src="Images/" alt="logo">
             <a href="Advertising.html">Know more about us</a>
             <a href="Shopping.html">Shop</a>
 
-            <a href ="profile.html">Profile</a>
-            <a href="cart.html">Cart</a>
+            <img class="img_size" src="Images/account_circle_white_24dp.svg" alt="account">
+            <img class="img_size" src="Images/shopping_cart_white_24dp.svg" alt="account">
           </nav>
     </header>
 
@@ -41,57 +41,56 @@
         </section>
 
         <main class="container">
-        <section class="main_grid">
-            <!--mothers beer- with image nav and rating-->
-            <h2 class="hidden">mothers beer display</h2>
+            <section class="four-items">
+                <!--mothers beer product, with inline-block images and image nav     give a 4 items grid-->  <!--title vertical-->
+                <h2 class="text_down">Beer for Mommies</h2>
+    
+                <!--item 1-->
+                <div class="outer">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer1"> </a> 
+                    <p>The Original</p>
+                    <p>Rating</p>
+                </div>  
+    
+                <div class="outer">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer2"> </a> 
+                    <p>Apple</p>
+                    <p>Rating</p>
+                </div>  
+    
+                <div class="outer">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
+                    <p>Mango and Passionfruit</p>
+                    <p>Rating</p>
+                </div>  
 
-           <!--Contents inside each "outer" are Items in a flex-box-->
-
-            <div class="outer">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
-                <p>The Original</p>
-                <p>Rating</p>
-            </div> 
-
-            <div class="outer">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
-                <p>Apple</p>
-                <p>Rating</p>
-            </div> 
-
-            <div class="outer">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
-                <p>Mango and Passionfruit</p>
-                <p>Rating</p>
-            </div> 
-
-        </section>
-
-        <section class="main_grid">
-            <!--babies beer- with image nav and rating-->
-            <h2 class="hidden">babies baby beer</h2>
-
-            <!--Contents inside each "outer" are Items in a flex-box-->
-
-            <div class="outer">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
-                <p>the original</p>
-                <p>Rating</p>
-            </div> 
-            <div class="outer">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
-                <p>Peach</p>
-                <p>Rating</p>
-            </div> 
-
-            <div class="outer">
-                <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
-                <p>Strawberry</p>
-                <p>Rating</p>
-            </div> 
+            </section>
 
 
-        </section>
+            <section class="four-items">
+                <!--mothers beer product, with inline-block images and image nav     give a 4 items grid-->  <!--title vertical-->
+                <h2 class="text_down">Beer for Babies</h2>
+    
+                <!--item 1-->
+                <div class="outer">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer1"> </a> 
+                    <p>The Original</p>
+                    <p>Rating</p>
+                </div>  
+    
+                <div class="outer">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer2"> </a> 
+                    <p>Peach</p>
+                    <p>Rating</p>
+                </div>  
+    
+                <div class="outer">
+                    <a href="https://placeholder.com"><img src="https://via.placeholder.com/350" alt="beer3"> </a> 
+                    <p>Strawberry</p>
+                    <p>Rating</p>
+                </div>  
+
+            </section>
 
 
         <section>
@@ -107,15 +106,15 @@
     </main>
 
   
-        <footer class="footer-box  main_grid">
+        <footer class="footer-box grid-footer">
             <!--social media accounts, page nav, contact info-->
             <h2 class="hidden">footer</h2>
             <div>
-                <p>Home</p>
-                <p>About </p>
-                <p>Products</p>
-                <p>Shop </p>
-                <p>Know More</p>
+                <a href="Home.html">Home</a> <br><br>
+                <a href="About.html">About</a> <br><br>
+                <a href="Products.html">Our Products</a> <br><br>
+                <a href="Advertising.html">Know more about us</a> <br><br>
+                <a href="Shopping.html">Shop</a> <br><br>
                 <p>Cookie Policy</p>
             </div>
     
