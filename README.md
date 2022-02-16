@@ -1,4 +1,4 @@
-# Project 3
+# Midterm
 
 Ishpreet Kaur and Mamatha Vaidehi
 
