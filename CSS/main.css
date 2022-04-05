@@ -1,6 +1,5 @@
-
 body{
-    width: 1890px;
+    width: 1870px;
     margin-left: .5em;
 }
 
@@ -21,6 +20,22 @@ h2, h3{
     margin-top: 0em;
 }
 
+span {
+    text-align: left;
+    font-family: 'Heineken', sans-serif;
+    font-size: 2em;
+}
+
+.hidden{
+    display:none;
+}
+
+.container{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
 .text_down{
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -29,11 +44,10 @@ h2, h3{
     font-weight: 400;
 }
 
-.container{
-    margin-left: 100px;
-    margin-right: 100px;
+/*header properties*/
+#menu_icon{
+    display:none;
 }
-
 .img_size{
     width: 2%;
     height: 2%;
@@ -41,9 +55,42 @@ h2, h3{
 }
 
 
+#logo {
+    width: 4%;
+    height:4%;
+}
+
+.head_nav{
+    font-size: xx-large;
+    margin: 0em;
+}
+
+.header-box {     /*used flexbox*/
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    background-color: #5DAE46;
+    width: 1885px;
+    height: 124px;
+    position: fixed;
+}
+
+.head_nav a{
+    margin:2em;
+    font-family: 'Heineken', sans-serif;
+    font-size: 1.10em;
+    color: white;
+    text-decoration: wavy;
+}
+
+/*end header properties*/
+
+
+/*footer properties*/
+
 .footer-box{
     background-color: #006F2D;
-    width:1890px;
+    width:1870px;
     margin-top:2em;
 }
 
@@ -62,9 +109,14 @@ h2, h3{
     margin-top: 1em;
 }
 
-.hidden{
-    display:none;
-}
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr  1fr ;
+    margin: 1em;
+    }
+
+/*end footer properties*/    
+
 .products{
     display: inline-block;
     margin: 2em 0em 2em 0em;
@@ -77,7 +129,8 @@ h2, h3{
 }
 .taglines{
     font-size: 50px;
-    margin-top:.5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
     color: #006F2D;
 }
 .interactive{
@@ -89,13 +142,16 @@ h2, h3{
     margin-left: .5em;
 }
 
-.head_nav{
-    font-size: xx-large;
-    margin: 0em;
+/*images*/
+section img{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-shrink: 3;
+    flex-grow: 2;
 }
+/*end images*/
 
-
-/*flex box for products*/
+/*flex box for products and its animation*/
 
 .outer {
     padding: 1em 1em 3em 1em;
@@ -107,8 +163,10 @@ h2, h3{
     animation-name: color-change;
     animation-duration: 3s;
     animation-iteration-count: infinite;
+    flex-shrink: 2;
     
 }
+
 
 @keyframes color-change{
     0% {
@@ -122,45 +180,134 @@ h2, h3{
     }
 }
 
-.header-box {
-    display: inline-flex;
-    align-items: center;
-    white-space: nowrap;
-    background-color: #5DAE46;
-    width:1890px;
-    height: 124px;
-    position: fixed;
-}
 
 /*flex properties end */
-.head_nav a{
-    margin:2em;
-    font-family: 'Heineken', sans-serif;
-    font-size: 1.10em;
-    color: white;
-    text-decoration: wavy;
-}
 
 
-
-.grid-footer {
-display: grid;
-grid-template-columns: 1fr 1fr  1fr ;
-margin: 1em;
-}
 
 .four-items{
-    display: grid;
+   /* display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 1em;
+    margin: 1em;*/
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; 
 }
 
 .two-items{
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 1em;
+    column-gap: 1em;
 }
 
 
-/* CSS animations*/
+
+/*media query-responsive sizes- 640*/
+
+@media screen and (max-width: 640px)  {
+
+    body{
+        width: 641px;
+        margin-left: 0em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1.5em;
+       /* margin-right: 15px;*/
+    }
+
+    .header-box a, .img_size {
+          display: none;
+    }
+
+    p{
+        font-size: 1em;
+       margin-right: 2.5em;
+       font-family: 'PT', sans-serif;
+       font-style:normal;
+       color: grey;
+    }
+
+    div p{
+        margin-top: 1em;
+        font-weight:bold;
+    }
+
+    .taglines{
+        font-size: 30px;
+        margin-top: .5em;
+        margin-bottom: .5em;
+        color: #006F2D;
+    }
+    #logo{
+  
+        width: 9%;
+        height:9%;
+    }
+    
+    #menu_icon{
+        display:inline-block;
+        width: 7%;
+        position:relative;
+        left: 10em;
+        bottom: .3em;
+    }
+
+    .disappear{
+        display: none;;
+    }
+
+    .footer-box{
+        background-color: #006F2D;
+        width:auto;
+        align-items: flex-start;
+        margin-top:2em;
+    }
+
+    .header-box {     
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #5DAE46;
+        /*width: 641px;*/
+        height: 74px;
+        position: fixed;
+    }
+
+    .text_down{
+    writing-mode: horizontal-tb;
+    font-size: 1.25em;
+    margin-top: 2em;
+    font-weight: 400;
+}
+   .big-img{
+       margin-left: 3em;
+       width: 150%;
+       border: #006F2D solid 8px;
+
+   } 
+
+   h2, h3{
+    font-family: 'Heineken', sans-serif;
+    font-size: 1.4em;
+    font-weight: 100;
+    margin-top: 0em;
+}
+span {
+    margin-right: 5em;
+    margin-left: -4em;
+    text-align: left;
+    font-family: 'Heineken', sans-serif;
+    font-size: 2em;
+}
+
+
+    
+}
 
