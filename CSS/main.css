@@ -26,6 +26,15 @@ span {
     font-size: 2em;
 }
 
+button{
+    padding: 1em 2em 1em 2em;
+    background-color: #006F2D;
+    font-family: 'Heineken';
+    font-size: large;
+    border-radius: 2em;
+    float: right;
+    margin-bottom: 2em;
+}
 .hidden{
     display:none;
 }
@@ -83,6 +92,10 @@ span {
     text-decoration: wavy;
 }
 
+.head_nav a:active{
+    text-decoration: underline;
+}
+
 /*end header properties*/
 
 
@@ -119,7 +132,7 @@ span {
 
 .products{
     display: inline-block;
-    margin: 2em 0em 2em 0em;
+    margin: 2em 3em 2em 2em;
 }
 .products a {
     margin-left: .5em;
@@ -134,12 +147,16 @@ span {
     color: #006F2D;
 }
 .interactive{
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 3em;
     margin-bottom: 3em;
 }
-.interactive p {
-    margin-top: .5em;
-    margin-left: .5em;
+.interactive img {
+    margin-top: 4em;
+    margin-left: 4em;
+    width: 15%;
 }
 
 /*images*/
@@ -150,6 +167,16 @@ section img{
     flex-grow: 2;
 }
 /*end images*/
+
+.logo-desc{
+    width: 20%;
+}
+.logo-text{
+    margin: 0em 8em 1em 5em;
+}
+.ourLogo{
+    margin-left: 0rem 0rem 2em 3.7rem;
+}
 
 /*flex box for products and its animation*/
 
@@ -196,8 +223,8 @@ section img{
 }
 
 .two-items{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: inline-flex;
+    flex-direction: row;
     margin: 1em;
     column-gap: 1em;
 }
