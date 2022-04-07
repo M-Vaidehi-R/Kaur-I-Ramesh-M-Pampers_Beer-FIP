@@ -16,53 +16,50 @@
 
     <h1 class="hidden">Home Page</h1>
 
-
-    <header class="header-box head_nav">
+    <header>
+        <img id="logo" class="center-flex" src="Images/logo-final (1).png" alt="logo">
         <!--nav to other pages and logo nav to home page -box model-->
-
+         <div class="header-box head_nav">
         <nav  aria-label="Main Navigation">
             <h2  hidden>Main Navigation </h2>
               
-            <a class="menu" href="Home.html">Home</a>
+            <a class="menu active" href="Home.html">Home</a>
             <a class="menu" href="About.html">About</a>
             <a class="menu" href="Products.html">Our Products</a>
-            <img id="logo" class="center-flex" src="Images/logo-final (1).png" alt="logo">
             <a class="menu" href="Advertising.html">About us</a>
             <a class="menu" href="Shopping.html">Shop</a>
-
-            <img class="img_size" src="Images/account_circle_white_24dp.svg" alt="account">
-            <img class="img_size" src="Images/shopping_cart_white_24dp.svg" alt="cart">
-            <img id="menu_icon" src="Images/menu_white_24dp.svg" alt="account">
+            <img id="menu_icon" src="Images/menu_black_24dp.svg" alt="account">
 
           </nav>
+        </div>
+        <img class="img_size" src="Images/account_circle_white_24dp.svg" alt="account">
+        <img class="img_size" src="Images/shopping_cart_white_24dp.svg" alt="cart">
     </header>
-
     
         <section>
             <!--header photo -2 nos for home page with 2nd page directed to the products-->
             <h2 class="hidden">Header Images</h2>  <!--add sliding to both images-->
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/1890x997" alt="header image 1"> </a>
+           <img src="Images/pampers-beer-edited.jpg" alt="header image">
             <img src="Images/" alt="">
         </section>
-
-        <section>
-            <h2>interactivity</h2>
-            <!--sign up section or some interesting info on pampers beer-->
-        </section>
         
-        <main class="container">
 
         <section class="products">
             <h2 class="hidden">Products</h2>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="beer1"> </a>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="beer2"> </a>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="beer3"> </a>
-            <a class="products"  href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="beer4"> </a>
+           <img class="bottle" src="Images/pampers-beer-original-mom.jpg" alt="original mommy">
+           <img class="bottle" src="Images/pampers-beer-original-baby.jpg" alt="original baby">
+           <img class="bottle" src="Images/pampers-beer-blueberry.jpg" alt="blueberry">
+           <img class="bottle" src="Images/pampers-beer-mango.jpg" alt="mango">
+           <img class="bottle" src="Images/pampers-beer-peach.jpg" alt="peach">
+           <img class="bottle" src="Images/pampers-beer-strawberry.jpg" alt="strawberry">
+
         </section>
+
+        <main class="container">
 
         <section class="two-items">
             <!--story   use a 2 item grid-->
-            <a href="https://placeholder.com"><img src="https://via.placeholder.com/700x550" alt="header image 1"> </a>
+            <img src="Images/responsibly-50.jpg" alt="strawberry">
 
             <div>
                 <h3>Evolving Responsibily</h3>  <!--this is from heineken, create different-->
@@ -78,11 +75,17 @@
         </section>
 
         <section class="products">
-            <h2>Our sponsered Events</h2>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="charity 1"> </a>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="charity 2"> </a>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="Sponsership1"> </a>
-            <a class="products" href="https://placeholder.com"><img src="https://via.placeholder.com/300" alt="sponsership2"> </a>
+            <h2>Our Events</h2>
+            <img class="events products" data-offset="0" src="Images/cleaning-50.jpg" alt="cleaning">
+            <img class="events products" data-offset="1" src="Images/class-50.jpg" alt="class">
+            <img class="events products" data-offset="2" src="Images/sponsership-50.jpg" alt="sponsership">
+            <img class="events products" data-offset="3" src="Images/donate-50.jpg" alt="donate">
+        </section>
+
+        <section>
+            <h2 class="hidden">Event description</h2>
+            <h2 id="evname"></h1>
+            <p id="evinfo"></p>
         </section>
     </main>
 
@@ -102,7 +105,7 @@
             <p class="disappear">social medias</p>
         </div>
     </footer>
-
     <script src="JS/main.js"></script>
+
 </body>
 </html>
