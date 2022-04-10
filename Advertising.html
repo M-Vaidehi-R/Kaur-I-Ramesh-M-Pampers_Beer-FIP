@@ -16,7 +16,7 @@
     <h1 class="hidden">Advertising Page</h1>
 
     <header>
-        <img id="logo" class="center-flex" src="Images/logo-final (1).png" alt="logo">
+        <img id="logo" class="center-flex" src="Images/logo-final.png" alt="logo">
         <!--nav to other pages and logo nav to home page -box model-->
          <div class="header-box head_nav">
         <nav  aria-label="Main Navigation">
@@ -27,12 +27,11 @@
             <a class="menu" href="Products.html">Our Products</a>
             <a class="menu active" href="Advertising.html">About us</a>
             <a class="menu" href="Shopping.html">Shop</a>
-            <img id="menu_icon" src="Images/menu_black_24dp.svg" alt="account">
-
+            <img id="menu_icon" src="Images/menu-icon.svg" alt="account">
           </nav>
         </div>
-        <img class="img_size" src="Images/account_circle_white_24dp.svg" alt="account">
-        <img class="img_size" src="Images/shopping_cart_white_24dp.svg" alt="cart">
+        <img class="img_size" src="Images/account-icon.svg" alt="account">
+        <img class="img_size" src="Images/cart-icon.svg" alt="cart">
     </header>
 
 
@@ -40,7 +39,7 @@
         <section>
             <!--header image-->
             <h2 class="hidden">header video</h2>
-            <video src="videos/pampers-beer.mp4" autoplay muted loop></video>
+            <video class="header-media" src="videos/pampers-beer.mp4" autoplay muted loop></video>
             
         </section>
  
@@ -49,28 +48,28 @@
             <!--a para on something of something encouraging and a full width image height smaller, small size-->
             <h2 hidden>combos</h2>
            <div>
-               <img class="interactive" data-offset="0" src="Images/mother-baby combo.svg" alt="Mother Baby Combo">
-               <img class="interactive" data-offset="1" src="Images/baby's beer.svg" alt="Babies beer combo">
-               <img class="interactive" data-offset="2" src="Images/mothers beer.svg" alt="Mother's beer combo">
+               <img class="interactive" data-offset="0" src="Images/mother-babyCombo.svg" alt="Mother Baby Combo">
+               <img class="interactive" data-offset="1" src="Images/baby'sBeer.svg" alt="Babies beer combo">
+               <img class="interactive" data-offset="2" src="Images/mothersBeer.svg" alt="Mother's beer combo">
                <img class="interactive" data-offset="3" src="Images/coupons.svg" alt="Discount Coupons">
            </div>
           
         </section>
-        <section>
+        <section  id="popBox2">
             <h2 class="hidden">Details</h2>
-            <h2 id="name"></h1>
-            <p id="info"></p>
+            <h3 id="name">Name</h3>
+            <p id="info">Info</p>
         </section>
         
         <main class="container">
 
        <section class="two-items">
         <!--story   use a 2 item grid-->
-        <img class="logo-desc" src="Images/logo-final (1).png" alt="our logo"> </a>
+        <img class="logo-desc" src="Images/logo-final.png" alt="our logo"> 
 
         <div>
-            <h3 class="ourLogo">Our Logo</h3>  <!--this is from heineken, create different-->
-        <p class="logo-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet lorem facilisis, auctor eros a, eleifend metus. Donec turpis neque, dignissim non felis et,
+            <h3 class="ourLogo disappear">Our Logo</h3>  <!--this is from heineken, create different-->
+        <p class="logo-text disappear">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet lorem facilisis, auctor eros a, eleifend metus. Donec turpis neque, dignissim non felis et,
             imperdiet aliquam mi. Praesent nunc tortor, placerat sit amet dignissim ac, molestie vel sapien. Nam vehicula nunc sit amet tortor lobortis vehicula.
             Morbi condimentum magna nec tortor tincidunt accumsan. Maecenas accumsan dui nec mi hendrerit ullamcorper. Donec eleifend diam consectetur, elementum augue ac,
             finibus quam. Mauris volutpat congue magna, in egestas enim lobortis vel. Suspendisse rhoncus eleifend nisi eu blandit. Integer commodo nisi tincidunt urna aliquam blandit. 
@@ -79,17 +78,25 @@
             varius vestibulum purus. Cras diam arcu, tristique ac vestibulum eu, ultrices ut urna.
         </p>
         </div>
+        </section>
     </main>
 
     <section class="products">
         <h2 class="hidden">Products</h2>
-       <img class="bottle" src="Images/pampers-beer-original-mom.jpg" alt="original mommy">
-       <img class="bottle" src="Images/pampers-beer-original-baby.jpg" alt="original baby">
-       <img class="bottle" src="Images/pampers-beer-blueberry.jpg" alt="blueberry">
-       <img class="bottle" src="Images/pampers-beer-mango.jpg" alt="mango">
-       <img class="bottle" src="Images/pampers-beer-peach.jpg" alt="peach">
-       <img class="bottle" src="Images/pampers-beer-strawberry.jpg" alt="strawberry">
+        <div>
+       <img class="bottle" data-offset="0" src="Images/pampers-beer-original-mom.jpg" alt="original mommy">
+       <img class="bottle" data-offset="1" src="Images/pampers-beer-original-baby.jpg" alt="original baby">
+       <img class="bottle" data-offset="2" src="Images/pampers-beer-blueberry.jpg" alt="blueberry">
+       <img class="bottle" data-offset="3" src="Images/pampers-beer-mango.jpg" alt="mango">
+       <img class="bottle" data-offset="4" src="Images/pampers-beer-peach.jpg" alt="peach">
+       <img class="bottle" data-offset="5" src="Images/pampers-beer-strawberry.jpg" alt="strawberry">
+    </div>
+    </section>
 
+    <section id="popBoxPr">
+        <h2 class="hidden">Bottle Description</h2>
+        <h3 id="PRname">Product name</h3>
+        <p id="PRinfo">Product Info</p>
     </section>
 
     <footer class="footer-box grid-footer">
