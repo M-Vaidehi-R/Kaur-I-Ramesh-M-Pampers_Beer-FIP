@@ -27,13 +27,13 @@ const mediaQuery= window.matchMedia('(max-width:640px)');
 ]
 
  EventText= [
-    `cleaning environment`,
-    `educational classes`,
-    `sponsership for students`,
-    `donations`
+    `We take part and host in campaigns for a cleaner environment`,
+    `We do educational classes in colleges and schools about health and fitness`,
+    `Apply for your Student scholarship today..conditions apply`,
+    `We help in raising 50 children across the globe`
 ]
 
- productDesc= [`Baby beer 1`, `Baby beer 1`, `Baby beer 1`,`Mothers beer1`, `Mothers beer1`, `Mothers beer1`]
+ productDesc= [`The Original for Mothers`, `The original for babies`, `Berry up the flavors with Blueberry beer`,`Craving for some Mangoes..? Here comes the Mango flavor for your rescue`, `Peach ones for your cute ones`, `Its Strawberry season again..`]
 
 
 console.log("pampers beer");
