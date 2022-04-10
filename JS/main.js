@@ -8,7 +8,14 @@ MenuIcon = document.querySelector("#menu_icon"),
 HeadBox = document.querySelector(".header-box"),
 Events = document.querySelectorAll(".events"),
 EvName= document.querySelector("#evname"),
-EvInfo= document.querySelector("#evinfo");
+EvInfo= document.querySelector("#evinfo"),
+PBox1= document.querySelector("#popBox1"),
+PBox2= document.querySelector("#popBox2"),
+BottleName=document.querySelectorAll(".bottle"),
+PrInfo=document.querySelector("#PRinfo"),
+PrName=document.querySelector("#PRname"),
+PBoxPR =document.querySelector("#popBoxPr");
+
 
 const mediaQuery= window.matchMedia('(max-width:640px)');
 
@@ -26,16 +33,38 @@ const mediaQuery= window.matchMedia('(max-width:640px)');
     `donations`
 ]
 
+ productDesc= [`Baby beer 1`, `Baby beer 1`, `Baby beer 1`,`Mothers beer1`, `Mothers beer1`, `Mothers beer1`]
+
 
 console.log("pampers beer");
 
+function ShowPB1() {
+    PBox1.style.display="block";
+    EvName.classList.add("showpopBox1");
+}
+function ShowPB2() {
+    PBox2.style.display="block";
+    Name.classList.add("showpopBox2");
+}
+
+function  ShowPBpr() {
+    PBoxPR.style.display="block";
+    PrName.classList.add("showpopBoxPr");
+}
 function Beers() {
     console.log("clicked on" , this.alt);
+    let PrOffset=this.dataset.offset;
+    ShowPBpr();
+    PrName.textContent=this.alt;
+    PrInfo.textContent= productDesc[PrOffset];
+    console.log("product name:", this.alt);
+
 }
 
 function ComboDetails() {
     //debugger;
     console.log("view more details about", this.alt);
+    ShowPB2();
     let offSet= this.dataset.offset;
          Name.textContent = this.alt;
          Info.textContent = infoText[offSet];
@@ -65,13 +94,14 @@ function handleTabletChange(event){
 function SponsorEvents() {
  
     let EvOffset=this.dataset.offset;
+    ShowPB1();
         EvName.textContent=this.alt;
         EvInfo.textContent= EventText[EvOffset];
     console.log("event name:", this.alt);
 }
 
 
-Products.addEventListener("click", Beers);
+BottleName.forEach(bot => bot.addEventListener("click", Beers));
 //Combos.addEventListener("click", ComboDetails);
 Combos.forEach(deal => deal.addEventListener("click", ComboDetails ));
 
