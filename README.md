@@ -1,8 +1,17 @@
-# Midterm
+##  FIP
+# PAMPERS BEER OFFICIAL WEBSITE
 
-Ishpreet Kaur and Mamatha Vaidehi
+### Beer for babies and mothers
 
-## Pampers Beer
+## Languages Used:
+HTML CSS JS
+
+### Authors
+[Mamatha Ramesh](https://github.com/M-Vaidehi-R)
+[Ishpreet Kaur](https://github.com/ishpreetxo)
+
+### License 
+MIT
 
 
 
