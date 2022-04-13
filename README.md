@@ -7,7 +7,7 @@
 HTML CSS JS
 
 ### Authors
-[Mamatha Ramesh](https://github.com/M-Vaidehi-R)
+[Mamatha Ramesh](https://github.com/M-Vaidehi-R) <br>
 [Ishpreet Kaur](https://github.com/ishpreetxo)
 
 ### License 
